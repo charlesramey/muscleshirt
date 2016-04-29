@@ -4,6 +4,7 @@ Given a txt file that contains data in the original format, return a dictionary 
 @param file: The file path with the training data
 @return A dict with keys that name the lists of data
 """
+import tkFileDialog
 BLOCK_SPACING = 18		#number of lines between consecutive entries in a block
 def create_lists(file):
 	values_dict = {"pitch_forearm": [], 
@@ -56,28 +57,36 @@ def getPitchAndRoll(line):
 	return tuple(data_arr)
 
 
+
+
+
+
+def main():
+    import os, json, Tkinter, tkFileDialog
+
+    os.chdir(tkFileDialog.askdirectory(title="Choose Training Data Directory"))
+
+    if not os.path.exists(os.getcwd() + "/parsed/"):
+        os.makedirs(os.getcwd() + "/parsed/")
+
+    files = [x for x in os.listdir(os.getcwd()) if os.path.isfile(x) and ".txt" in x]	#exclude source file
+    print files
+
+    for f_name in files:
+        try:
+            values_dict = create_lists(f_name)
+
+            name = os.path.splitext(os.path.basename(f_name))[0]
+            with open("./parsed/" + name + "_list.json", "w+") as f:
+                f.write(json.dumps(values_dict, indent=4))
+
+        except:
+            print "ERROR IN FILE: " + f_name
+
+
+
+
+
+
 if __name__ == "__main__":
-	import os
-	import json
-	import sys
-
-	if not os.path.exists(os.getcwd() + "/parsed/"):
-		os.makedirs(os.getcwd() + "/parsed/")
-
-	files = [x for x in os.listdir(os.getcwd()) if os.path.isfile(x) and ".py" not in x]	#exclude source file
-	print files
-
-	for f_name in files:
-		try:
-			values_dict = create_lists(f_name)
-		
-
-			name = os.path.splitext(os.path.basename(f_name))[0]
-			with open("./parsed/"+ name + "_list.json", "w+") as f:
-				f.write(json.dumps(values_dict, indent=4))
-
-		except:
-			print "ERROR IN FILE: " + f_name
-
-
-
+    main()
