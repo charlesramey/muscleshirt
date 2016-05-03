@@ -25,18 +25,18 @@ class CSVGenerator(object):
     def insertData(csv_file_path, data_dicts_list):
         with open(csv_file_path, "a+b") as csv_file:
             dr = csv.DictReader(csv_file)
-            headers = dr.fieldnames
+            headers_read = dr.fieldnames
 
             #if headers and not len(set(headers).intersection(HEADER_ROWS)) == len(HEADER_ROWS):
                 #raise ValueError("Present header values are not the same as HEADER_ROWS. Check CSVGenerator.py for expected header row values and " + csv_file_path + " for input header values")
+            if headers_read: 
+                dw = csv.DictWriter(csv_file, headers_read)
+            else:
+                dw = csv.DictWriter(csv_file, sorted(data_dicts_list[0].keys()))
 
-            if not headers: 
-                headers = sorted(data_dicts_list[0].keys())
+            if not headers_read:
+                dw.writeheader()
 
-
-            dw = csv.DictWriter(csv_file, headers)
-
-            dw.writeheader()
             dw.writerows(data_dicts_list)
 
 

@@ -57,14 +57,14 @@ def getPitchAndRoll(line):
 	return tuple(data_arr)
 
 
-
-
-
-
-def main():
+"""
+Parses the training data and then returns the directory path of the parsed data
+"""
+def run():
     import os, json, Tkinter, tkFileDialog
+    root = Tkinter.Tk()
 
-    os.chdir(tkFileDialog.askdirectory(title="Choose Training Data Directory"))
+    os.chdir(tkFileDialog.askdirectory(title="Choose Training Data TEXT Files Directory"))
 
     if not os.path.exists(os.getcwd() + "/parsed/"):
         os.makedirs(os.getcwd() + "/parsed/")
@@ -82,6 +82,16 @@ def main():
 
         except:
             print "ERROR IN FILE: " + f_name
+
+
+
+    root.destroy()
+
+    return os.getcwd() + "/parsed/"
+
+
+def main():
+    run()
 
 
 
