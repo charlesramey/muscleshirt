@@ -1,7 +1,7 @@
 import csv
-
+SENSOR_NUM_FEATURES = 5
 HEADER_ROWS = [
-               "excercise",         #this row indicates what exercise is being performed (for training data). For real time samples (prediction), leave this field as None 
+               "_excercise",         #this row indicates what exercise is being performed (for training data). For real time samples (prediction), leave this field as None 
                "emg_forearm_1", "emg_forearm_2", "emg_forearm_3", "emg_forearm_4", "emg_forearm_5", 
                "emg_upper_arm_1", "emg_upper_arm_2", "emg_upper_arm_3", "emg_upper_arm_4", "emg_upper_arm_5",
                "emg_chest_1", "emg_chest_2", "emg_chest_3", "emg_chest_4", "emg_chest_5",
@@ -27,14 +27,16 @@ class CSVGenerator(object):
             dr = csv.DictReader(csv_file)
             headers = dr.fieldnames
 
-            if headers and not len(set(headers).intersection(HEADER_ROWS)) == len(HEADER_ROWS):
-                raise ValueError("Present header values are not the same as HEADER_ROWS. Check CSVGenerator.py for expected header row values and " + csv_file_path + " for input header values")
+            #if headers and not len(set(headers).intersection(HEADER_ROWS)) == len(HEADER_ROWS):
+                #raise ValueError("Present header values are not the same as HEADER_ROWS. Check CSVGenerator.py for expected header row values and " + csv_file_path + " for input header values")
 
-
-            dw = csv.DictWriter(csv_file, HEADER_ROWS)
             if not headers: 
-                dw.writeheader()
+                headers = sorted(data_dicts_list[0].keys())
 
+
+            dw = csv.DictWriter(csv_file, headers)
+
+            dw.writeheader()
             dw.writerows(data_dicts_list)
 
 
