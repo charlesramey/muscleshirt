@@ -5,7 +5,7 @@ Given a txt file that contains data in the original format, return a dictionary 
 @return A dict with keys that name the lists of data
 """
 import tkFileDialog
-BLOCK_SPACING = 18		#number of lines between consecutive entries in a block
+BLOCK_SPACING = 6		#number of lines between consecutive entries in a block
 
 
 
@@ -25,15 +25,15 @@ def create_lists(file):
 	beg_block_pointer = 0
 	while(beg_block_pointer + BLOCK_SPACING < len(data)):
 		#extract values
-		pitch_forearm_val, roll_forearm_val = getPitchAndRoll(data[beg_block_pointer + 4])
+		pitch_forearm_val, roll_forearm_val = getPitchAndRoll(data[beg_block_pointer + 1])
 		pitch_forearm_val, roll_forearm_val = (float(pitch_forearm_val), float(roll_forearm_val))
 
-		pitch_upper_arm_val, roll_upper_arm_val = getPitchAndRoll(data[beg_block_pointer + 8])
+		pitch_upper_arm_val, roll_upper_arm_val = getPitchAndRoll(data[beg_block_pointer + 0])
 		pitch_upper_arm_val, roll_upper_arm_val = (float(pitch_upper_arm_val), float(roll_upper_arm_val))
 
-		emg_chest_val = int(data[beg_block_pointer + 12])
-		emg_upper_arm_val = int(data[beg_block_pointer + 14])
-		emg_forearm_val = int(data[beg_block_pointer + 16])
+		emg_chest_val = int(data[beg_block_pointer + 2])
+		emg_upper_arm_val = int(data[beg_block_pointer + 3])
+		emg_forearm_val = int(data[beg_block_pointer + 4])
 
 		#add values to dict
 		values_dict['pitch_forearm'].append(pitch_forearm_val)
