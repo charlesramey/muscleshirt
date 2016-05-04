@@ -8,7 +8,11 @@ exercise_dict = {
                  '1': 'bicep curl',
                  '2': 'pushup',
                  '3': 'bench press',
-                 '4': 'chest flye'
+                 '4': 'chest flye',
+                 'curl': 'bicep curl',
+                 'pushup': 'pushup',
+                 'fly': 'chest flye',
+                 'press': 'bench press'
                  }
 
 CSV_FILE_NAME = os.getcwd() + "/Training Data " + datetime.datetime.now().strftime("%H-%M") + ".csv"

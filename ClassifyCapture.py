@@ -5,6 +5,14 @@ import sys, os, json
 
 
 TEMP_JSON_FNAME = "./temp.json"
+DEFAULT_WINDOW_SIZE = 5
+
+
+
+
+
+
+
 """
 Given a text capture file, outputs the classification obtained through Azure
 """
@@ -17,7 +25,7 @@ def run(file):
 
     #get features
     feature_extractor = det.Determiner(TEMP_JSON_FNAME)
-    features_dict = feature_extractor.extract_features_dict(5)
+    features_dict = feature_extractor.extract_features_dict(DEFAULT_WINDOW_SIZE)
     feature_extractor.showPlots()
 
     #send features for classification 
@@ -40,9 +48,12 @@ def run(file):
 
 def main():
     if len(sys.argv) > 1:
-        text_capture_file = sys.argv[1]  
+        text_capture_file = sys.argv[1]
+
     else:
         text_capture_file =  "./training data/1_1.txt"
+
+
     run(text_capture_file)
 
 

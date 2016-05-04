@@ -126,10 +126,11 @@ class Determiner(object):
     @returns [indices]: A list of feature indices
     """
     def _get_feature_indices(self, index, window_size):
+        import math
         span_lim = window_size/2
 
-        step_val = window_size/(self.num_features-2)
-        feature_indices = range(index-span_lim, index+span_lim+1, window_size/self.num_features)
+        step_val = int( math.ceil(float(window_size)/(self.num_features)) )
+        feature_indices = range(index-span_lim, index+span_lim+1, step_val)
         #feature_indices = [index-span_lim, index+span_lim] + range(index+step_val, index+span_lim, step_val)
 
         self.feature_indices = sorted(feature_indices)
