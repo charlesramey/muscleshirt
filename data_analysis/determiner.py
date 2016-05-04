@@ -47,7 +47,7 @@ class Determiner(object):
         data_dict = self.preprocess_data() if use_preprocessed else self.values_dict
         
         name, indx, max_val = self._find_freeze_frame_info(data_dict, window_size)
-        print "Using freeze frame based on *** %s *** with max value: %f at index %d" % (name, max_val, indx)
+        #print "Using freeze frame based on *** %s *** with max value: %f at index %d" % (name, max_val, indx)
         features_indices = self._get_feature_indices(indx, window_size)
 
         features_dict = {}
@@ -107,7 +107,7 @@ class Determiner(object):
 
         name, indx, valz = max(val_list, key = lambda x: x[2])
 
-        print "Max value of %f found for %s at index %d" % (valz, name, indx)
+        #print "Max value of %f found for %s at index %d" % (valz, name, indx)
        
         self.freeze_frame_info = (name, indx, valz)
         return (name, indx, valz)   #return only index of max tuple

@@ -26,21 +26,25 @@ def main():
 
 
     num_features = 5
-    window_size = 9
+    window_size = 5
 
 
     #Gather features for each training file and input into CSV file
+    determs = []
     for json_file in os.listdir(parsed_directory_path):
         file_name = os.path.splitext(os.path.basename(json_file))[0]
         exercise_type = file_name.split("_")[0]
 
         determ = determiner.Determiner(parsed_directory_path + json_file, exercise_dict[exercise_type], num_features)
         determ.extract_features_dict(window_size)
-        determ.showPlots(window_size)
         determ.insertFeaturesInCSV(CSV_FILE_NAME)
+        determs.append(determ)
 
-
-
+    #import random as rand
+    #for y in range(5):
+    #    d = determs[rand.randint(0, len(determs)-1)]
+    #    print "Showing plot for " + d.json_file
+    #    d.showPlots()
 
 
 

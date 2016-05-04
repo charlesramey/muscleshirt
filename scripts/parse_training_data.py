@@ -5,9 +5,12 @@ Given a txt file that contains data in the original format, return a dictionary 
 @return A dict with keys that name the lists of data
 """
 import tkFileDialog
+
+
+
+
+
 BLOCK_SPACING = 6		#number of lines between consecutive entries in a block
-
-
 
 def create_lists(file):
 	values_dict = {"pitch_forearm": [], 
@@ -25,6 +28,7 @@ def create_lists(file):
 	beg_block_pointer = 0
 	while(beg_block_pointer + BLOCK_SPACING < len(data)):
 		#extract values
+
 		pitch_forearm_val, roll_forearm_val = getPitchAndRoll(data[beg_block_pointer + 1])
 		pitch_forearm_val, roll_forearm_val = (float(pitch_forearm_val), float(roll_forearm_val))
 
@@ -83,8 +87,10 @@ def run():
             with open("./parsed/" + name + "_list.json", "w+") as f:
                 f.write(json.dumps(values_dict, indent=4))
 
-        except:
+        except Exception, e:
+            import traceback
             print "ERROR IN FILE: " + f_name
+            print traceback.print_exc()
 
 
 
