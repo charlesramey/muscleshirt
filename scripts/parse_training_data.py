@@ -6,6 +6,9 @@ Given a txt file that contains data in the original format, return a dictionary 
 """
 import tkFileDialog
 BLOCK_SPACING = 18		#number of lines between consecutive entries in a block
+
+
+
 def create_lists(file):
 	values_dict = {"pitch_forearm": [], 
 	"roll_forearm": [],

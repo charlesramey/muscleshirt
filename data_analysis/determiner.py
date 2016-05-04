@@ -21,7 +21,8 @@ class Determiner(object):
             raise ValueError("Features per sensor must be odd!")
 
         
-
+        self.feature_indices = []
+        self.freeze_frame_info = (None, None, None)
         self.features_dict = {'_exercise': exercise}
 
 
@@ -73,16 +74,19 @@ class Determiner(object):
 
 
 
-    def showPlots(self, window_size):
+    def showPlots(self):
         preprocessed_data = self.preprocess_data()
+        feature_indices = self.feature_indices
+        _, indx, max_val = self.freeze_frame_info
 
-        for k in [x for x in preprocessed_data if "emg" in x]:  #only consider emg readings
+        for k in [x for x in preprocessed_data]:  #only consider emg readings
             data = preprocessed_data[k]
             plt.figure(k)
             plt.title(k)
             plt.plot(self.values_dict[k], color ="red")
             plt.plot(data, color="green", linewidth=3)
             plt.plot(indx, max_val, "bv", markersize=10)
+            plt.plot(feature_indices, [data[x] for x in feature_indices], "yo", markersize=5)
             
         plt.show()
 
@@ -105,6 +109,7 @@ class Determiner(object):
 
         print "Max value of %f found for %s at index %d" % (valz, name, indx)
        
+        self.freeze_frame_info = (name, indx, valz)
         return (name, indx, valz)   #return only index of max tuple
 
 
@@ -123,8 +128,11 @@ class Determiner(object):
     def _get_feature_indices(self, index, window_size):
         span_lim = window_size/2
 
-        feature_indices = [index-span_lim, index+span_lim] + range(index-span_lim+1, index+span_lim, window_size/self.num_features)
+        step_val = window_size/(self.num_features-2)
+        feature_indices = range(index-span_lim, index+span_lim+1, window_size/self.num_features)
+        #feature_indices = [index-span_lim, index+span_lim] + range(index+step_val, index+span_lim, step_val)
 
+        self.feature_indices = sorted(feature_indices)
         return sorted(feature_indices)
 
 

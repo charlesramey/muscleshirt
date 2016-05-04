@@ -18,7 +18,7 @@ def run(file):
     #get features
     feature_extractor = det.Determiner(TEMP_JSON_FNAME)
     features_dict = feature_extractor.extract_features_dict(5)
-
+    feature_extractor.showPlots()
 
     #send features for classification 
     result = json.loads(req.sendRequest(features_dict))
@@ -30,7 +30,7 @@ def run(file):
         print name + ":\t" + col_vals[i]
 
     print "\n\n\nBest Prediction\n------------------------\n"
-    print "Exercise: %s\t\tProbability: %0.3f" % (col_vals[-1].title(), float(max(col_vals[:-1])))
+    print "Exercise: %s\t\tProbability: %0.3f\n\n" % (col_vals[-1].title(), float(max(col_vals[:-1])))
 
 
     #remove temp JSON file
@@ -39,6 +39,13 @@ def run(file):
 
 
 def main():
-    #text_capture_file = sys.argv[1]
-    text_capture_file = "./training data/1_2.txt"
+    if len(sys.argv) > 1:
+        text_capture_file = sys.argv[1]  
+    else:
+        text_capture_file =  "./training data/1_1.txt"
     run(text_capture_file)
+
+
+
+if __name__ == "__main__":
+    main()
