@@ -32,7 +32,9 @@ def main():
 
         determ = determiner.Determiner(parsed_directory_path + json_file, exercise_dict[exercise_type], num_features)
         determ.extract_features_dict(window_size)
+        determ.showPlots(window_size)
         determ.insertFeaturesInCSV(CSV_FILE_NAME)
+
 
 
 

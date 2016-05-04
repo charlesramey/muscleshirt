@@ -76,8 +76,6 @@ class Determiner(object):
     def showPlots(self, window_size):
         preprocessed_data = self.preprocess_data()
 
-        name, indx, max_val = self._find_freeze_frame_info(preprocessed_data, window_size)
-
         for k in [x for x in preprocessed_data if "emg" in x]:  #only consider emg readings
             data = preprocessed_data[k]
             plt.figure(k)
