@@ -1,0 +1,186 @@
+Pitch, Roll: 0, 0
+Pitch, Roll: -14.94, -73.45
+534
+36
+24
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -16.09, -73.75
+533
+46
+27
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -21.90, -68.10
+695
+64
+26
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -17.92, -71.61
+432
+46
+27
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -16.76, -73.24
+491
+38
+26
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -16.92, -71.93
+444
+31
+83
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -21.44, -67.13
+322
+30
+147
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -19.83, -69.48
+247
+33
+105
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -20.76, -68.40
+531
+40
+84
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -19.57, -69.64
+535
+33
+115
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -18.97, -65.14
+328
+122
+175
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -0.39, -87.48
+505
+200
+258
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -28.98, -59.66
+638
+125
+302
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -20.48, -63.22
+548
+148
+306
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -9.33, -77.90
+676
+207
+337
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -33.01, -50.57
+848
+266
+425
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -25.37, -64.43
+773
+316
+388
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -18.22, -70.36
+785
+260
+302
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -18.98, -54.57
+1023
+140
+327
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -8.00, -73.63
+1023
+172
+230
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -15.63, -63.87
+1023
+273
+120
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -18.61, -50.71
+1023
+206
+98
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -18.67, -62.39
+1023
+191
+78
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -14.36, -75.24
+1023
+257
+68
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -29.07, -60.88
+1023
+292
+112
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -25.55, -58.94
+1023
+280
+75
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: 3.78, -35.12
+992
+182
+43
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -29.31, -53.46
+1023
+140
+66
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -23.07, -66.90
+1023
+98
+38
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -26.61, -63.37
+1023
+72
+32
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: 0.24, -81.29
+1023
+56
+32
+**

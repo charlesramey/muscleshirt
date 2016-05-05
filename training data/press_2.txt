@@ -1,0 +1,276 @@
+Pitch, Roll: 0, 0
+Pitch, Roll: -0.93, 85.07
+115
+46
+128
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -3.92, 80.24
+84
+66
+138
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -7.90, 74.76
+104
+64
+116
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -4.84, 77.29
+160
+34
+294
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -0.20, 83.15
+103
+32
+145
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -0.90, 82.30
+82
+59
+91
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -5.18, 80.57
+225
+24
+44
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -2.39, 84.74
+94
+23
+51
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -2.65, 83.73
+97
+23
+59
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -1.83, 84.34
+114
+24
+50
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: 2.07, 86.21
+54
+26
+56
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: 0.59, 89.33
+190
+29
+52
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -1.49, 85.57
+202
+28
+111
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: 0.01, 89.98
+334
+58
+208
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -0.03, 89.59
+160
+139
+147
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -8.51, 81.49
+178
+187
+157
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -10.44, 79.08
+147
+208
+102
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -0.69, 88.45
+155
+254
+172
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -8.21, 81.78
+223
+355
+127
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -9.07, 80.40
+369
+311
+158
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -8.13, 81.57
+407
+324
+126
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -5.24, 84.60
+117
+454
+117
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -5.64, 84.35
+70
+478
+160
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -5.34, 84.20
+550
+354
+112
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -13.23, 76.61
+404
+418
+69
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -15.45, 74.30
+797
+447
+70
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: 0.19, 89.09
+1023
+585
+84
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -11.27, 78.69
+1023
+436
+71
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -3.18, 85.44
+1023
+382
+74
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: 0.85, 89.09
+1023
+267
+51
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -19.14, 70.02
+1023
+277
+40
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -10.40, 79.59
+1023
+327
+70
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -6.63, 83.34
+1023
+222
+89
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -26.48, 60.45
+1023
+190
+63
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -2.95, 86.49
+1023
+227
+64
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -8.04, 76.79
+1023
+179
+102
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -12.99, 59.28
+760
+247
+104
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -9.39, 78.13
+705
+189
+93
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -7.40, 69.10
+579
+152
+168
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -2.00, 81.08
+533
+140
+127
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -12.07, 73.47
+656
+149
+86
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -15.82, 65.56
+472
+98
+87
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: 3.85, 83.29
+239
+110
+121
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -7.06, 76.98
+156
+146
+70
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -10.72, 72.96
+233
+83
+90
+**
+Pitch, Roll: 0, 0
+Pitch, Roll: -3.37, 79.52
+187
+39
+91
+**
